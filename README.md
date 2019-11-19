@@ -1,9 +1,5 @@
 # FileManagerServer
 
-------
-
-
-
 ## 简介
 
 &emsp;基于 SpringBoot、Jdbc、MySQL、Layui实现的简易文件管理服务器
@@ -54,4 +50,4 @@
 
 ## 项目截图
 
-![首页](https://www.github.com/HungKuei/FileManagerServer/blob/doc/index.png)
+![首页](https://github.com/HungKuei/FileManagerServer/blob/master/doc/index.png)
