@@ -15,12 +15,6 @@ public class FileServerConfiger {
     /** 文件保存路径 **/
     private String pathDirectory;
 
-    /** 获取文件地址 **/
-    private String getFilePathUrl;
-
-    /** 日志记录路径 **/
-    private String fileRecordPath;
-
     /** token**/
     private String token;
 

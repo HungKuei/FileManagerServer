@@ -18,10 +18,10 @@ public class FileUtil {
 		out.close();
 	}
 
-	public static void downloadFile(String filePath, String fileName, HttpServletResponse response) throws Exception {
+	public static byte[] getFileByte(String filePath, HttpServletResponse response) throws IOException {
+		File file = new File(filePath);
 		// 判断文件是否存在
-		File inFile = new File(filePath);
-		if (!inFile.exists()) {
+		if (!file.exists()) {
 			PrintWriter writer = null;
 			try {
 				response.setContentType("text/html;charset=UTF-8");
@@ -31,31 +31,33 @@ public class FileUtil {
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
-			return;
+			return null;
 		}
+		long fileSize = file.length();
+		FileInputStream is = new FileInputStream(file);
+		byte[] buffer = new byte[(int) fileSize];
+		int offset = 0;
+		int numRead = 0;
+		while (offset < buffer.length
+				&& (numRead = is.read(buffer, offset, buffer.length - offset)) >= 0) {
+			offset += numRead;
+		}
+		// 确保所有数据均被读取
+		if (offset != buffer.length) {
+			throw new IOException("Could not completely read file "
+					+ file.getName());
+		}
+		is.close();
+		return buffer;
+	}
+
+	public static void downloadFile(byte[] data, String fileName, HttpServletResponse response) throws Exception {
 		response.setContentType("application/force-download");
 		response.addHeader("Content-Disposition", "attachment;filename="+URLEncoder.encode(fileName,"UTF-8"));
-		FileInputStream is = null;
-		OutputStream os = null;
-		try {
-			os = response.getOutputStream();
-			is = new FileInputStream(inFile);
-			byte[] buff = new byte[1024];
-			int len;
-			while ((len = is.read(buff)) != -1) {
-				os.write(buff, 0, len);
-			}
-			os.flush();
-		} catch (IOException e) {
-			e.printStackTrace();
-		} finally {
-			try {
-				is.close();
-				os.close();
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-		}
+		OutputStream os = response.getOutputStream();
+		os.write(data);
+		os.flush();
+		os.close();
 	}
 
 	public static String getFileNameNoEx(String filename) {

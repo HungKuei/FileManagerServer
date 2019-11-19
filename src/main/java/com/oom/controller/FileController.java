@@ -1,14 +1,13 @@
 package com.oom.controller;
 
+import com.oom.config.FileClientConfiger;
 import com.oom.config.FileServerConfiger;
 import com.oom.domain.FileDO;
 import com.oom.service.FileService;
-import com.oom.utils.DateUtil;
-import com.oom.utils.FileType;
-import com.oom.utils.FileUtil;
-import com.oom.utils.R;
+import com.oom.utils.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -30,7 +29,6 @@ public class FileController {
 	@Autowired
 	private FileServerConfiger fileServerConfiger;
 
-	
 	@ResponseBody
 	@GetMapping("/list")
 	public R list(@RequestParam Integer page, Integer limit){
@@ -45,7 +43,7 @@ public class FileController {
 	 */
 	@PostMapping( "/del")
 	@ResponseBody
-	public R remove(@RequestParam Long id){
+	public R remove(@RequestParam String id){
         FileDO fileDO = fileService.get(id);
         if (fileDO == null){
         	return R.error("文件不存在");
@@ -53,7 +51,7 @@ public class FileController {
 		if (!fileService.remove(id)){
         	return R.error("删除失败，请重试");
 		}
-		String filePath = fileDO.getUrl() + "/" + fileDO.getContent() +"." + fileDO.getType();
+		String filePath = fileDO.getUrl() + fileDO.getId() +"." + fileDO.getType();
 		if (!FileUtil.deleteFile(filePath)){
 			return R.error("删除失败");
 		}
@@ -63,17 +61,14 @@ public class FileController {
 	/**
 	 * 上传文件
 	 */
+	@Transactional
 	@ResponseBody
 	@PostMapping("/upload")
-	public R upload(@RequestParam("file") MultipartFile file, HttpServletRequest request) {
-
-		//如需获取其他表单信息，可通过request.getParameter("paramName")来获取
-		//例：String paramName = request.getParameter("paramName");
-		//以下为从MultipartFile中获取文件信息并做相关处理
+	public R upload(@RequestParam("file") MultipartFile file, HttpServletRequest request) throws Exception {
 		String fileName = file.getOriginalFilename();
 		Long fileSize = file.getSize();
 		String newFileName = FileUtil.renameToUUID(fileName);
-		String filePath = fileServerConfiger.getPathDirectory()+DateUtil.getNowDate();
+		String filePath = fileServerConfiger.getPathDirectory()+DateUtil.getNowDate()+"/";
 		String fileType = FileType.fileType(fileName);
 		if (fileType.equals("0")){
 			return R.error("文件名为空");
@@ -81,16 +76,18 @@ public class FileController {
 		if (fileType.equals("1")){
 			return R.error("不支持当前文件类型的上传");
 		}
-		FileDO sysFile = new FileDO(FileUtil.getFileNameNoEx(fileName), fileType, fileSize, filePath, FileUtil.getFileNameNoEx(newFileName), new Date());
-		try {
-			FileUtil.uploadFile(file.getBytes(), filePath, newFileName);
-		} catch (Exception e) {
+		// 生成随机密钥
+		String secretKey = AESEncUtil.getSecretKey();
+		// 使用 RSA非对称加密算法对随机密钥加密(公钥加密)
+		String rsaMessage = RsaSignature.rsaEncrypt(secretKey, fileServerConfiger.getServerPublicKey());
+		FileDO sysFile = new FileDO(FileUtil.getFileNameNoEx(newFileName),FileUtil.getFileNameNoEx(fileName), fileType, fileSize, filePath, rsaMessage, new Date());
+		if (fileService.save(sysFile) != 1) {
 			return R.error();
 		}
-		if (fileService.save(sysFile) > 0) {
-			return R.ok().put("fileName",sysFile.getUrl());
-		}
-		return R.error();
+		// AES对称加密
+		byte[] encrypt = AESEncUtil.encrypt(file.getBytes(), secretKey);
+		FileUtil.uploadFile(encrypt, filePath, newFileName);
+		return R.ok().put("id",sysFile.getId());
 	}
 
 	/**
@@ -98,14 +95,20 @@ public class FileController {
 	 */
 	@ResponseBody
 	@GetMapping("/download/{id}")
-	public void download(@PathVariable("id") Long id, HttpServletResponse response) {
+	public void download(@PathVariable("id") String id, HttpServletResponse response) throws Exception {
 		FileDO fileDO = fileService.get(id);
 		String filePath = fileDO.getUrl();
 		String fileName = fileDO.getName();
-		filePath += "/" + fileDO.getContent() + "." + fileDO.getType();
+		filePath += id + "." + fileDO.getType();
 		fileName += "." + fileDO.getType();
-        try {
-            FileUtil.downloadFile(filePath,fileName,response);
+		// Ras私钥解密
+		String content = fileDO.getContent();
+		String decrypt = RsaSignature.rsaDecrypt(content, fileServerConfiger.getServerPrivateKey());
+		byte[] bytes = FileUtil.getFileByte(filePath, response);
+		// AES 解密
+		byte[] data = AESEncUtil.decrypt(bytes, decrypt);
+		try {
+            FileUtil.downloadFile(data,fileName,response);
         } catch (Exception e) {
             e.printStackTrace();
         }

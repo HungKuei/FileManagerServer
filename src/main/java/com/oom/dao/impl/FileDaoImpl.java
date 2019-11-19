@@ -18,7 +18,7 @@ public class FileDaoImpl implements FileDao {
     private JdbcTemplate jdbcTemplate;
 
     @Override
-    public FileDO get(Long id) {
+    public FileDO get(String id) {
         String sql = "SELECT * FROM file_info WHERE id = ?";
         return jdbcTemplate.queryForObject(sql, new Object[]{id}, new BeanPropertyRowMapper<>(FileDO.class));
     }
@@ -27,12 +27,11 @@ public class FileDaoImpl implements FileDao {
     public List<FileDO> list(Integer currentPage, Integer linesize) {
         String sql = "SELECT * FROM file_info LIMIT ?,?";
         SqlRowSet result = jdbcTemplate.queryForRowSet(sql, currentPage, linesize);
-        //List list = jdbcTemplate.queryForList(sql, new Integer[]{currentPage, linesize}, FileDO.class);
         List<FileDO> list = new ArrayList<>();
         while (result.next()){
             FileDO file = new FileDO();
             file.setName(result.getString("name"));
-            file.setId(result.getLong("id"));
+            file.setId(result.getString("id"));
             file.setType(result.getString("type"));
             file.setSize(result.getLong("size"));
             file.setUrl(result.getString("url"));
@@ -51,12 +50,12 @@ public class FileDaoImpl implements FileDao {
 
     @Override
     public int save(FileDO file) {
-        String sql = "INSERT INTO file_info (name, type, size, url, content, create_date) VALUES(?,?,?,?,?,?)";
-        return jdbcTemplate.update(sql, new Object[]{file.getName(), file.getType(), file.getSize(), file.getUrl(), file.getContent(), file.getCreateDate()});
+        String sql = "INSERT INTO file_info (id, name, type, size, url, content, create_date) VALUES(?,?,?,?,?,?,?)";
+        return jdbcTemplate.update(sql, new Object[]{file.getId(), file.getName(), file.getType(), file.getSize(), file.getUrl(), file.getContent(), file.getCreateDate()});
     }
 
     @Override
-    public int remove(Long id) {
+    public int remove(String id) {
         String sql = "DELETE FROM file_info WHERE id = ?";
         return jdbcTemplate.update(sql, id);
     }

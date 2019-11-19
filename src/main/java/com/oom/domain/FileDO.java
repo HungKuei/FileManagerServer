@@ -17,7 +17,7 @@ import java.util.Date;
 public class FileDO implements Serializable {
 	private static final long serialVersionUID = 1L;
 
-	private Long id;
+	private String id;
 
 	// 文件名称
 	private String name;
@@ -37,8 +37,9 @@ public class FileDO implements Serializable {
 	//创建时间
 	private Date createDate;
 
-	public FileDO(String name, String type, Long size ,String url, String content,  Date createDate) {
+	public FileDO(String id, String name, String type, Long size ,String url, String content,  Date createDate) {
 		super();
+		this.id = id;
 		this.name = name;
 		this.type = type;
 		this.size = size;

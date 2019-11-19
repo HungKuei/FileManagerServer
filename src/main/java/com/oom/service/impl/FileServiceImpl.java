@@ -15,7 +15,7 @@ public class FileServiceImpl implements FileService {
 	private FileDao fileDao;
 	
 	@Override
-	public FileDO get(Long id){
+	public FileDO get(String id){
 		return fileDao.get(id);
 	}
 	
@@ -37,7 +37,7 @@ public class FileServiceImpl implements FileService {
 	}
 	
 	@Override
-	public boolean remove(Long id){
+	public boolean remove(String id){
 		return fileDao.remove(id) > 0;
 	}
 

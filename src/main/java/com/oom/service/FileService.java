@@ -13,7 +13,7 @@ import java.util.List;
  */
 public interface FileService {
 
-	FileDO get(Long id);
+	FileDO get(String id);
 
 	List<FileDO> list(Integer page, Integer limit);
 
@@ -21,5 +21,5 @@ public interface FileService {
 
 	int save(FileDO file);
 
-	boolean remove(Long id);
+	boolean remove(String id);
 }

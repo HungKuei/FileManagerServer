@@ -10,7 +10,7 @@ import java.util.List;
  */
 public interface FileDao {
 
-	FileDO get(Long id);
+	FileDO get(String id);
 	
 	List<FileDO> list(Integer currentPage, Integer linesize);
 
@@ -18,5 +18,5 @@ public interface FileDao {
 	
 	int save(FileDO file);
 	
-	int remove(Long id);
+	int remove(String id);
 }

@@ -9,12 +9,6 @@ import org.springframework.stereotype.Component;
 @Data
 public class FileClientConfiger {
 
-    /** 服务器地址**/
-    private String fileServerUrl;
-
-    /** 删除的服务器地址**/
-    private String deleteServerUrl;
-
     /** token**/
     private String token;
 
