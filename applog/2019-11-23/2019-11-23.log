@@ -1,0 +1,884 @@
+2019-11-23 15:51:48 -Starting FileServerApplication on LLORGAN-RHSPTI7 with PID 19924 (D:\idea_workspace\FileManagerServer\server\target\classes started by Administrator in D:\idea_workspace\FileManagerServer)
+2019-11-23 15:51:48 -No active profile set, falling back to default profiles: default
+2019-11-23 15:51:48 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1a482e36: startup date [Sat Nov 23 15:51:48 CST 2019]; root of context hierarchy
+2019-11-23 15:51:48 -HV000001: Hibernate Validator 5.3.6.Final
+2019-11-23 15:51:49 -Tomcat initialized with port(s): 8081 (http)
+2019-11-23 15:51:49 -Starting service [Tomcat]
+2019-11-23 15:51:49 -Starting Servlet Engine: Apache Tomcat/8.5.23
+2019-11-23 15:51:49 -Initializing Spring embedded WebApplicationContext
+2019-11-23 15:51:49 -Root WebApplicationContext: initialization completed in 701 ms
+2019-11-23 15:51:49 -Mapping servlet: 'dispatcherServlet' to [/]
+2019-11-23 15:51:49 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-11-23 15:51:49 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-11-23 15:51:49 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-11-23 15:51:49 -Mapping filter: 'requestContextFilter' to: [/*]
+2019-11-23 15:51:49 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1a482e36: startup date [Sat Nov 23 15:51:48 CST 2019]; root of context hierarchy
+2019-11-23 15:51:49 -Mapped "{[/del/{id}],methods=[POST]}" onto public com.oom.utils.R com.oom.controller.FileServerController.remove(java.lang.String)
+2019-11-23 15:51:49 -Mapped "{[/list/{page}/{limit}],methods=[GET]}" onto public com.oom.utils.R com.oom.controller.FileServerController.list(java.lang.Integer,java.lang.Integer)
+2019-11-23 15:51:49 -Mapped "{[/download/{id}],methods=[GET]}" onto public com.oom.model.FileDO com.oom.controller.FileServerController.download(java.lang.String)
+2019-11-23 15:51:49 -Mapped "{[/uploadFile],methods=[POST]}" onto public com.oom.utils.R com.oom.controller.FileServerController.upload(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+2019-11-23 15:51:49 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-11-23 15:51:49 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-11-23 15:51:50 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-23 15:51:50 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-23 15:51:50 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-23 15:51:50 -Registering beans for JMX exposure on startup
+2019-11-23 15:51:50 -Initializing ProtocolHandler ["http-nio-8081"]
+2019-11-23 15:51:50 -Starting ProtocolHandler ["http-nio-8081"]
+2019-11-23 15:51:50 -Using a shared selector for servlet write/read
+2019-11-23 15:51:50 -Tomcat started on port(s): 8081 (http)
+2019-11-23 15:51:50 -Started FileServerApplication in 1.593 seconds (JVM running for 2.114)
+2019-11-23 15:52:07 -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-11-23 15:52:07 -FrameworkServlet 'dispatcherServlet': initialization started
+2019-11-23 15:52:08 -FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2019-11-23 15:56:27 -Starting FileServerApplication on LLORGAN-RHSPTI7 with PID 24560 (D:\idea_workspace\FileManagerServer\server\target\classes started by Administrator in D:\idea_workspace\FileManagerServer)
+2019-11-23 15:56:27 -No active profile set, falling back to default profiles: default
+2019-11-23 15:56:27 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3fc9504b: startup date [Sat Nov 23 15:56:27 CST 2019]; root of context hierarchy
+2019-11-23 15:56:27 -HV000001: Hibernate Validator 5.3.6.Final
+2019-11-23 15:56:28 -Tomcat initialized with port(s): 8081 (http)
+2019-11-23 15:56:28 -Starting service [Tomcat]
+2019-11-23 15:56:28 -Starting Servlet Engine: Apache Tomcat/8.5.23
+2019-11-23 15:56:28 -Initializing Spring embedded WebApplicationContext
+2019-11-23 15:56:28 -Root WebApplicationContext: initialization completed in 794 ms
+2019-11-23 15:56:28 -Mapping servlet: 'dispatcherServlet' to [/]
+2019-11-23 15:56:28 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-11-23 15:56:28 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-11-23 15:56:28 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-11-23 15:56:28 -Mapping filter: 'requestContextFilter' to: [/*]
+2019-11-23 15:56:28 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3fc9504b: startup date [Sat Nov 23 15:56:27 CST 2019]; root of context hierarchy
+2019-11-23 15:56:28 -Mapped "{[/del/{id}],methods=[POST]}" onto public com.oom.utils.R com.oom.controller.FileServerController.remove(java.lang.String)
+2019-11-23 15:56:28 -Mapped "{[/list/{page}/{limit}],methods=[GET]}" onto public com.oom.utils.R com.oom.controller.FileServerController.list(java.lang.Integer,java.lang.Integer)
+2019-11-23 15:56:28 -Mapped "{[/uploadFile],methods=[POST]}" onto public com.oom.utils.R com.oom.controller.FileServerController.upload(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+2019-11-23 15:56:28 -Mapped "{[/download/{id}],methods=[GET]}" onto public com.oom.model.FileDO com.oom.controller.FileServerController.download(java.lang.String)
+2019-11-23 15:56:28 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-11-23 15:56:28 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-11-23 15:56:28 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-23 15:56:28 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-23 15:56:28 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-23 15:56:28 -Registering beans for JMX exposure on startup
+2019-11-23 15:56:28 -Initializing ProtocolHandler ["http-nio-8081"]
+2019-11-23 15:56:28 -Starting ProtocolHandler ["http-nio-8081"]
+2019-11-23 15:56:28 -Using a shared selector for servlet write/read
+2019-11-23 15:56:28 -Tomcat started on port(s): 8081 (http)
+2019-11-23 15:56:28 -Started FileServerApplication in 1.854 seconds (JVM running for 2.466)
+2019-11-23 15:58:14 -Starting FileServerApplication on LLORGAN-RHSPTI7 with PID 20544 (D:\idea_workspace\FileManagerServer\server\target\classes started by Administrator in D:\idea_workspace\FileManagerServer)
+2019-11-23 15:58:14 -No active profile set, falling back to default profiles: default
+2019-11-23 15:58:14 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3fc9504b: startup date [Sat Nov 23 15:58:14 CST 2019]; root of context hierarchy
+2019-11-23 15:58:14 -HV000001: Hibernate Validator 5.3.6.Final
+2019-11-23 15:58:15 -Tomcat initialized with port(s): 8081 (http)
+2019-11-23 15:58:15 -Starting service [Tomcat]
+2019-11-23 15:58:15 -Starting Servlet Engine: Apache Tomcat/8.5.23
+2019-11-23 15:58:15 -Initializing Spring embedded WebApplicationContext
+2019-11-23 15:58:15 -Root WebApplicationContext: initialization completed in 797 ms
+2019-11-23 15:58:15 -Mapping servlet: 'dispatcherServlet' to [/]
+2019-11-23 15:58:15 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-11-23 15:58:15 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-11-23 15:58:15 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-11-23 15:58:15 -Mapping filter: 'requestContextFilter' to: [/*]
+2019-11-23 15:58:16 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3fc9504b: startup date [Sat Nov 23 15:58:14 CST 2019]; root of context hierarchy
+2019-11-23 15:58:16 -Mapped "{[/del/{id}],methods=[POST]}" onto public com.oom.utils.R com.oom.controller.FileServerController.remove(java.lang.String)
+2019-11-23 15:58:16 -Mapped "{[/list/{page}/{limit}],methods=[GET]}" onto public com.oom.utils.R com.oom.controller.FileServerController.list(java.lang.Integer,java.lang.Integer)
+2019-11-23 15:58:16 -Mapped "{[/uploadFile],methods=[POST]}" onto public com.oom.utils.R com.oom.controller.FileServerController.upload(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+2019-11-23 15:58:16 -Mapped "{[/download/{id}],methods=[GET]}" onto public com.oom.model.FileDO com.oom.controller.FileServerController.download(java.lang.String)
+2019-11-23 15:58:16 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-11-23 15:58:16 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-11-23 15:58:16 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-23 15:58:16 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-23 15:58:16 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-23 15:58:16 -Registering beans for JMX exposure on startup
+2019-11-23 15:58:16 -Initializing ProtocolHandler ["http-nio-8081"]
+2019-11-23 15:58:16 -Starting ProtocolHandler ["http-nio-8081"]
+2019-11-23 15:58:16 -Using a shared selector for servlet write/read
+2019-11-23 15:58:16 -Tomcat started on port(s): 8081 (http)
+2019-11-23 15:58:16 -Started FileServerApplication in 1.911 seconds (JVM running for 2.45)
+2019-11-23 15:58:40 -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-11-23 15:58:40 -FrameworkServlet 'dispatcherServlet': initialization started
+2019-11-23 15:58:40 -FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2019-11-23 16:03:31 -Starting FileServerApplication on LLORGAN-RHSPTI7 with PID 27200 (D:\idea_workspace\FileManagerServer\server\target\classes started by Administrator in D:\idea_workspace\FileManagerServer)
+2019-11-23 16:03:31 -No active profile set, falling back to default profiles: default
+2019-11-23 16:03:31 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3fc9504b: startup date [Sat Nov 23 16:03:31 CST 2019]; root of context hierarchy
+2019-11-23 16:03:31 -HV000001: Hibernate Validator 5.3.6.Final
+2019-11-23 16:03:32 -Tomcat initialized with port(s): 8081 (http)
+2019-11-23 16:03:32 -Starting service [Tomcat]
+2019-11-23 16:03:32 -Starting Servlet Engine: Apache Tomcat/8.5.23
+2019-11-23 16:03:32 -Initializing Spring embedded WebApplicationContext
+2019-11-23 16:03:32 -Root WebApplicationContext: initialization completed in 778 ms
+2019-11-23 16:03:32 -Mapping servlet: 'dispatcherServlet' to [/]
+2019-11-23 16:03:32 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-11-23 16:03:32 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-11-23 16:03:32 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-11-23 16:03:32 -Mapping filter: 'requestContextFilter' to: [/*]
+2019-11-23 16:03:32 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3fc9504b: startup date [Sat Nov 23 16:03:31 CST 2019]; root of context hierarchy
+2019-11-23 16:03:32 -Mapped "{[/del/{id}],methods=[POST]}" onto public com.oom.utils.R com.oom.controller.FileServerController.remove(java.lang.String)
+2019-11-23 16:03:32 -Mapped "{[/list/{page}/{limit}],methods=[GET]}" onto public com.oom.utils.R com.oom.controller.FileServerController.list(java.lang.Integer,java.lang.Integer)
+2019-11-23 16:03:32 -Mapped "{[/download/{id}],methods=[GET]}" onto public com.oom.model.FileDO com.oom.controller.FileServerController.download(java.lang.String)
+2019-11-23 16:03:32 -Mapped "{[/uploadFile],methods=[POST]}" onto public com.oom.utils.R com.oom.controller.FileServerController.upload(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+2019-11-23 16:03:32 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-11-23 16:03:32 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-11-23 16:03:32 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-23 16:03:32 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-23 16:03:32 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-23 16:03:32 -Registering beans for JMX exposure on startup
+2019-11-23 16:03:32 -Initializing ProtocolHandler ["http-nio-8081"]
+2019-11-23 16:03:32 -Starting ProtocolHandler ["http-nio-8081"]
+2019-11-23 16:03:32 -Using a shared selector for servlet write/read
+2019-11-23 16:03:32 -Tomcat started on port(s): 8081 (http)
+2019-11-23 16:03:32 -Started FileServerApplication in 1.858 seconds (JVM running for 2.395)
+2019-11-23 16:03:46 -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-11-23 16:03:46 -FrameworkServlet 'dispatcherServlet': initialization started
+2019-11-23 16:03:46 -FrameworkServlet 'dispatcherServlet': initialization completed in 27 ms
+2019-11-23 16:10:42 -Starting FileServerApplication on LLORGAN-RHSPTI7 with PID 11576 (D:\idea_workspace\FileManagerServer\server\target\classes started by Administrator in D:\idea_workspace\FileManagerServer)
+2019-11-23 16:10:42 -No active profile set, falling back to default profiles: default
+2019-11-23 16:10:42 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3fc9504b: startup date [Sat Nov 23 16:10:42 CST 2019]; root of context hierarchy
+2019-11-23 16:10:42 -HV000001: Hibernate Validator 5.3.6.Final
+2019-11-23 16:10:43 -Tomcat initialized with port(s): 8081 (http)
+2019-11-23 16:10:43 -Starting service [Tomcat]
+2019-11-23 16:10:43 -Starting Servlet Engine: Apache Tomcat/8.5.23
+2019-11-23 16:10:43 -Initializing Spring embedded WebApplicationContext
+2019-11-23 16:10:43 -Root WebApplicationContext: initialization completed in 789 ms
+2019-11-23 16:10:43 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-11-23 16:10:43 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-11-23 16:10:43 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-11-23 16:10:43 -Mapping filter: 'requestContextFilter' to: [/*]
+2019-11-23 16:10:43 -Mapping filter: 'authFilter' to urls: [/*]
+2019-11-23 16:10:43 -Mapping servlet: 'dispatcherServlet' to [/]
+2019-11-23 16:10:43 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3fc9504b: startup date [Sat Nov 23 16:10:42 CST 2019]; root of context hierarchy
+2019-11-23 16:10:43 -Mapped "{[/del/{id}],methods=[POST]}" onto public com.oom.utils.R com.oom.controller.FileServerController.remove(java.lang.String)
+2019-11-23 16:10:43 -Mapped "{[/list/{page}/{limit}],methods=[GET]}" onto public com.oom.utils.R com.oom.controller.FileServerController.list(java.lang.Integer,java.lang.Integer)
+2019-11-23 16:10:43 -Mapped "{[/uploadFile],methods=[POST]}" onto public com.oom.utils.R com.oom.controller.FileServerController.upload(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+2019-11-23 16:10:43 -Mapped "{[/download/{id}],methods=[GET]}" onto public com.oom.model.FileDO com.oom.controller.FileServerController.download(java.lang.String)
+2019-11-23 16:10:43 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-11-23 16:10:43 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-11-23 16:10:43 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-23 16:10:43 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-23 16:10:43 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-23 16:10:44 -Registering beans for JMX exposure on startup
+2019-11-23 16:10:44 -Initializing ProtocolHandler ["http-nio-8081"]
+2019-11-23 16:10:44 -Starting ProtocolHandler ["http-nio-8081"]
+2019-11-23 16:10:44 -Using a shared selector for servlet write/read
+2019-11-23 16:10:44 -Tomcat started on port(s): 8081 (http)
+2019-11-23 16:10:44 -Started FileServerApplication in 1.863 seconds (JVM running for 2.373)
+2019-11-23 16:11:06 -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-11-23 16:11:06 -FrameworkServlet 'dispatcherServlet': initialization started
+2019-11-23 16:11:06 -FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2019-11-23 16:11:06 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:11:46 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:11:56 ->>>>>>>>>>>>>验签失败<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:12:14 -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.IllegalStateException: getOutputStream() has already been called for this response
+	at org.apache.catalina.connector.Response.getWriter(Response.java:625)
+	at org.apache.catalina.connector.ResponseFacade.getWriter(ResponseFacade.java:211)
+	at com.oom.filter.AuthFilter.doFilter(AuthFilter.java:45)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-11-23 16:12:14 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:12:20 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:12:20 ->>>>>>>>>>>>>验签失败<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:12:20 -Servlet.service() for servlet [dispatcherServlet] threw exception
+java.lang.IllegalStateException: getOutputStream() has already been called for this response
+	at org.apache.catalina.connector.Response.getWriter(Response.java:625)
+	at org.apache.catalina.connector.ResponseFacade.getWriter(ResponseFacade.java:211)
+	at javax.servlet.ServletResponseWrapper.getWriter(ServletResponseWrapper.java:109)
+	at com.oom.filter.AuthFilter.doFilter(AuthFilter.java:45)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:728)
+	at org.apache.catalina.core.ApplicationDispatcher.doInclude(ApplicationDispatcher.java:590)
+	at org.apache.catalina.core.ApplicationDispatcher.include(ApplicationDispatcher.java:524)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:389)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:254)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:349)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:175)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-11-23 16:12:20 -Exception Processing ErrorPage[errorCode=0, location=/error]
+java.lang.IllegalStateException: getOutputStream() has already been called for this response
+	at org.apache.catalina.connector.Response.getWriter(Response.java:625)
+	at org.apache.catalina.connector.ResponseFacade.getWriter(ResponseFacade.java:211)
+	at javax.servlet.ServletResponseWrapper.getWriter(ServletResponseWrapper.java:109)
+	at com.oom.filter.AuthFilter.doFilter(AuthFilter.java:45)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:728)
+	at org.apache.catalina.core.ApplicationDispatcher.doInclude(ApplicationDispatcher.java:590)
+	at org.apache.catalina.core.ApplicationDispatcher.include(ApplicationDispatcher.java:524)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:389)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:254)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:349)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:175)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-11-23 16:12:46 -Starting FileServerApplication on LLORGAN-RHSPTI7 with PID 26668 (D:\idea_workspace\FileManagerServer\server\target\classes started by Administrator in D:\idea_workspace\FileManagerServer)
+2019-11-23 16:12:46 -No active profile set, falling back to default profiles: default
+2019-11-23 16:12:46 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3fc9504b: startup date [Sat Nov 23 16:12:46 CST 2019]; root of context hierarchy
+2019-11-23 16:12:46 -HV000001: Hibernate Validator 5.3.6.Final
+2019-11-23 16:12:47 -Tomcat initialized with port(s): 8081 (http)
+2019-11-23 16:12:47 -Starting service [Tomcat]
+2019-11-23 16:12:47 -Starting Servlet Engine: Apache Tomcat/8.5.23
+2019-11-23 16:12:47 -Initializing Spring embedded WebApplicationContext
+2019-11-23 16:12:47 -Root WebApplicationContext: initialization completed in 804 ms
+2019-11-23 16:12:47 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-11-23 16:12:47 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-11-23 16:12:47 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-11-23 16:12:47 -Mapping filter: 'requestContextFilter' to: [/*]
+2019-11-23 16:12:47 -Mapping filter: 'authFilter' to urls: [/*]
+2019-11-23 16:12:47 -Mapping servlet: 'dispatcherServlet' to [/]
+2019-11-23 16:12:47 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3fc9504b: startup date [Sat Nov 23 16:12:46 CST 2019]; root of context hierarchy
+2019-11-23 16:12:47 -Mapped "{[/del/{id}],methods=[POST]}" onto public com.oom.utils.R com.oom.controller.FileServerController.remove(java.lang.String)
+2019-11-23 16:12:47 -Mapped "{[/list/{page}/{limit}],methods=[GET]}" onto public com.oom.utils.R com.oom.controller.FileServerController.list(java.lang.Integer,java.lang.Integer)
+2019-11-23 16:12:47 -Mapped "{[/uploadFile],methods=[POST]}" onto public com.oom.utils.R com.oom.controller.FileServerController.upload(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+2019-11-23 16:12:47 -Mapped "{[/download/{id}],methods=[GET]}" onto public com.oom.model.FileDO com.oom.controller.FileServerController.download(java.lang.String)
+2019-11-23 16:12:47 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-11-23 16:12:47 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-11-23 16:12:47 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-23 16:12:47 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-23 16:12:47 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-23 16:12:48 -Registering beans for JMX exposure on startup
+2019-11-23 16:12:48 -Initializing ProtocolHandler ["http-nio-8081"]
+2019-11-23 16:12:48 -Starting ProtocolHandler ["http-nio-8081"]
+2019-11-23 16:12:48 -Using a shared selector for servlet write/read
+2019-11-23 16:12:48 -Tomcat started on port(s): 8081 (http)
+2019-11-23 16:12:48 -Started FileServerApplication in 1.914 seconds (JVM running for 2.428)
+2019-11-23 16:12:51 -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-11-23 16:12:51 -FrameworkServlet 'dispatcherServlet': initialization started
+2019-11-23 16:12:51 -FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2019-11-23 16:12:51 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:12:58 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:13:16 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:13:19 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:15:23 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:15:37 -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.NullPointerException: null
+	at com.oom.filter.AuthFilter.doFilter(AuthFilter.java:35)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-11-23 16:15:42 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:16:02 -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.NullPointerException: null
+	at com.oom.filter.AuthFilter.doFilter(AuthFilter.java:35)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-11-23 16:16:26 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:16:26 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:17:09 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:17:09 -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.NullPointerException: null
+	at com.oom.filter.AuthFilter.doFilter(AuthFilter.java:35)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-11-23 16:17:32 -Starting FileServerApplication on LLORGAN-RHSPTI7 with PID 22388 (D:\idea_workspace\FileManagerServer\server\target\classes started by Administrator in D:\idea_workspace\FileManagerServer)
+2019-11-23 16:17:32 -No active profile set, falling back to default profiles: default
+2019-11-23 16:17:32 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3fc9504b: startup date [Sat Nov 23 16:17:32 CST 2019]; root of context hierarchy
+2019-11-23 16:17:32 -HV000001: Hibernate Validator 5.3.6.Final
+2019-11-23 16:17:33 -Tomcat initialized with port(s): 8081 (http)
+2019-11-23 16:17:33 -Starting service [Tomcat]
+2019-11-23 16:17:33 -Starting Servlet Engine: Apache Tomcat/8.5.23
+2019-11-23 16:17:33 -Initializing Spring embedded WebApplicationContext
+2019-11-23 16:17:33 -Root WebApplicationContext: initialization completed in 814 ms
+2019-11-23 16:17:33 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-11-23 16:17:33 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-11-23 16:17:33 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-11-23 16:17:33 -Mapping filter: 'requestContextFilter' to: [/*]
+2019-11-23 16:17:33 -Mapping filter: 'authFilter' to urls: [/*]
+2019-11-23 16:17:33 -Mapping servlet: 'dispatcherServlet' to [/]
+2019-11-23 16:17:33 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3fc9504b: startup date [Sat Nov 23 16:17:32 CST 2019]; root of context hierarchy
+2019-11-23 16:17:33 -Mapped "{[/del/{id}],methods=[POST]}" onto public com.oom.utils.R com.oom.controller.FileServerController.remove(java.lang.String)
+2019-11-23 16:17:33 -Mapped "{[/list/{page}/{limit}],methods=[GET]}" onto public com.oom.utils.R com.oom.controller.FileServerController.list(java.lang.Integer,java.lang.Integer)
+2019-11-23 16:17:33 -Mapped "{[/uploadFile],methods=[POST]}" onto public com.oom.utils.R com.oom.controller.FileServerController.upload(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+2019-11-23 16:17:33 -Mapped "{[/download/{id}],methods=[GET]}" onto public com.oom.model.FileDO com.oom.controller.FileServerController.download(java.lang.String)
+2019-11-23 16:17:33 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-11-23 16:17:33 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-11-23 16:17:33 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-23 16:17:33 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-23 16:17:33 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-23 16:17:33 -Registering beans for JMX exposure on startup
+2019-11-23 16:17:33 -Initializing ProtocolHandler ["http-nio-8081"]
+2019-11-23 16:17:33 -Starting ProtocolHandler ["http-nio-8081"]
+2019-11-23 16:17:33 -Using a shared selector for servlet write/read
+2019-11-23 16:17:33 -Tomcat started on port(s): 8081 (http)
+2019-11-23 16:17:33 -Started FileServerApplication in 1.916 seconds (JVM running for 2.543)
+2019-11-23 16:17:43 -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-11-23 16:17:43 -FrameworkServlet 'dispatcherServlet': initialization started
+2019-11-23 16:17:43 -FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2019-11-23 16:17:43 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:17:43 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:17:51 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:17:51 -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.NullPointerException: null
+	at com.oom.filter.AuthFilter.doFilter(AuthFilter.java:35)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-11-23 16:18:29 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:18:29 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:18:42 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:18:42 -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.NullPointerException: null
+	at com.oom.filter.AuthFilter.doFilter(AuthFilter.java:35)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-11-23 16:20:12 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:20:12 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:20:34 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:20:54 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:22:17 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:22:20 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:23:10 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:23:10 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:23:22 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:23:22 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:23:26 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:23:26 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:23:34 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:23:34 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:23:35 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:23:35 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:23:45 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:23:45 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:23:45 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:23:45 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:23:49 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:23:49 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:23:50 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:23:50 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:23:55 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:23:55 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:24:04 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:24:04 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:24:04 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:24:04 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:24:11 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:24:11 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:24:15 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:24:15 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:24:15 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:24:15 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:24:19 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:24:19 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:24:19 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:24:19 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:24:30 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:24:30 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:24:30 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:24:30 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:24:36 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:24:36 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:24:37 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:24:37 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:24:40 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:24:40 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:24:42 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:24:42 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:24:43 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:24:43 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:24:45 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:24:45 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:24:46 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:24:46 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:24:49 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:24:49 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:24:52 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:24:52 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:24:54 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:24:54 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:24:57 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:24:57 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:25:00 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:25:00 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:25:08 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:25:08 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:25:08 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:25:08 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:25:12 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:25:12 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:25:12 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:25:12 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:25:21 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:25:21 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:25:21 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:25:21 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:25:23 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:25:23 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:25:23 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:25:23 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:25:26 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:25:26 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:25:26 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:25:26 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:25:28 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:25:28 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:25:28 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:25:28 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:25:30 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:25:30 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:25:30 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:25:30 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:25:33 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:25:33 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:25:33 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:25:33 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:25:37 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:25:37 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:25:37 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:25:37 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:26:52 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:27:05 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:27:52 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:27:55 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:33:26 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:33:26 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:34:25 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:34:25 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:34:25 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:34:25 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:34:27 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:34:27 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:34:27 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:34:27 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:38:00 -Starting FileServerApplication on LLORGAN-RHSPTI7 with PID 21148 (D:\idea_workspace\FileManagerServer\server\target\classes started by Administrator in D:\idea_workspace\FileManagerServer)
+2019-11-23 16:38:00 -No active profile set, falling back to default profiles: default
+2019-11-23 16:38:00 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3fc9504b: startup date [Sat Nov 23 16:38:00 CST 2019]; root of context hierarchy
+2019-11-23 16:38:00 -HV000001: Hibernate Validator 5.3.6.Final
+2019-11-23 16:38:01 -Tomcat initialized with port(s): 8081 (http)
+2019-11-23 16:38:01 -Starting service [Tomcat]
+2019-11-23 16:38:01 -Starting Servlet Engine: Apache Tomcat/8.5.23
+2019-11-23 16:38:01 -Initializing Spring embedded WebApplicationContext
+2019-11-23 16:38:01 -Root WebApplicationContext: initialization completed in 828 ms
+2019-11-23 16:38:01 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-11-23 16:38:01 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-11-23 16:38:01 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-11-23 16:38:01 -Mapping filter: 'requestContextFilter' to: [/*]
+2019-11-23 16:38:01 -Mapping filter: 'authFilter' to urls: [/*]
+2019-11-23 16:38:01 -Mapping servlet: 'dispatcherServlet' to [/]
+2019-11-23 16:38:01 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3fc9504b: startup date [Sat Nov 23 16:38:00 CST 2019]; root of context hierarchy
+2019-11-23 16:38:01 -Mapped "{[/del/{id}],methods=[POST]}" onto public com.oom.utils.R com.oom.controller.FileServerController.remove(java.lang.String)
+2019-11-23 16:38:01 -Mapped "{[/list/{page}/{limit}],methods=[GET]}" onto public com.oom.utils.R com.oom.controller.FileServerController.list(java.lang.Integer,java.lang.Integer)
+2019-11-23 16:38:01 -Mapped "{[/download/{id}],methods=[GET]}" onto public com.oom.model.FileDO com.oom.controller.FileServerController.download(java.lang.String)
+2019-11-23 16:38:01 -Mapped "{[/uploadFile],methods=[POST]}" onto public com.oom.utils.R com.oom.controller.FileServerController.upload(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+2019-11-23 16:38:01 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-11-23 16:38:01 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-11-23 16:38:02 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-23 16:38:02 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-23 16:38:02 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-23 16:38:02 -Registering beans for JMX exposure on startup
+2019-11-23 16:38:02 -Initializing ProtocolHandler ["http-nio-8081"]
+2019-11-23 16:38:02 -Starting ProtocolHandler ["http-nio-8081"]
+2019-11-23 16:38:02 -Using a shared selector for servlet write/read
+2019-11-23 16:38:02 -Tomcat started on port(s): 8081 (http)
+2019-11-23 16:38:02 -Started FileServerApplication in 1.915 seconds (JVM running for 2.423)
+2019-11-23 16:38:05 -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-11-23 16:38:05 -FrameworkServlet 'dispatcherServlet': initialization started
+2019-11-23 16:38:05 -FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2019-11-23 16:38:05 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:38:05 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:38:06 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:38:06 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:38:10 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:38:10 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:38:10 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:38:10 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:38:11 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:38:11 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:40:49 -Starting FileServerApplication on LLORGAN-RHSPTI7 with PID 23340 (D:\idea_workspace\FileManagerServer\server\target\classes started by Administrator in D:\idea_workspace\FileManagerServer)
+2019-11-23 16:40:49 -No active profile set, falling back to default profiles: default
+2019-11-23 16:40:49 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3fc9504b: startup date [Sat Nov 23 16:40:49 CST 2019]; root of context hierarchy
+2019-11-23 16:40:49 -HV000001: Hibernate Validator 5.3.6.Final
+2019-11-23 16:40:50 -Tomcat initialized with port(s): 8081 (http)
+2019-11-23 16:40:50 -Starting service [Tomcat]
+2019-11-23 16:40:50 -Starting Servlet Engine: Apache Tomcat/8.5.23
+2019-11-23 16:40:50 -Initializing Spring embedded WebApplicationContext
+2019-11-23 16:40:50 -Root WebApplicationContext: initialization completed in 903 ms
+2019-11-23 16:40:50 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-11-23 16:40:50 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-11-23 16:40:50 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-11-23 16:40:50 -Mapping filter: 'requestContextFilter' to: [/*]
+2019-11-23 16:40:50 -Mapping filter: 'authFilter' to urls: [/*]
+2019-11-23 16:40:50 -Mapping servlet: 'dispatcherServlet' to [/]
+2019-11-23 16:40:50 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3fc9504b: startup date [Sat Nov 23 16:40:49 CST 2019]; root of context hierarchy
+2019-11-23 16:40:50 -Mapped "{[/del/{id}],methods=[POST]}" onto public com.oom.utils.R com.oom.controller.FileServerController.remove(java.lang.String)
+2019-11-23 16:40:50 -Mapped "{[/list/{page}/{limit}],methods=[GET]}" onto public com.oom.utils.R com.oom.controller.FileServerController.list(java.lang.Integer,java.lang.Integer)
+2019-11-23 16:40:50 -Mapped "{[/uploadFile],methods=[POST]}" onto public com.oom.utils.R com.oom.controller.FileServerController.upload(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+2019-11-23 16:40:50 -Mapped "{[/download/{id}],methods=[GET]}" onto public com.oom.model.FileDO com.oom.controller.FileServerController.download(java.lang.String)
+2019-11-23 16:40:50 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-11-23 16:40:50 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-11-23 16:40:50 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-23 16:40:50 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-23 16:40:50 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-23 16:40:50 -Registering beans for JMX exposure on startup
+2019-11-23 16:40:50 -Initializing ProtocolHandler ["http-nio-8081"]
+2019-11-23 16:40:50 -Starting ProtocolHandler ["http-nio-8081"]
+2019-11-23 16:40:50 -Using a shared selector for servlet write/read
+2019-11-23 16:40:50 -Tomcat started on port(s): 8081 (http)
+2019-11-23 16:40:50 -Started FileServerApplication in 2.071 seconds (JVM running for 2.666)
+2019-11-23 16:41:01 -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-11-23 16:41:01 -FrameworkServlet 'dispatcherServlet': initialization started
+2019-11-23 16:41:01 -FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2019-11-23 16:41:01 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:41:01 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:41:08 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:41:08 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:41:08 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:41:08 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:41:15 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:41:15 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:41:15 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:41:15 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:41:16 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:41:16 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:41:47 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:41:47 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:43:07 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:43:07 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:43:08 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:43:08 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:47:28 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:47:28 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:47:30 -Starting FileServerApplication on LLORGAN-RHSPTI7 with PID 15428 (D:\idea_workspace\FileManagerServer\server\target\classes started by Administrator in D:\idea_workspace\FileManagerServer)
+2019-11-23 16:47:30 -No active profile set, falling back to default profiles: default
+2019-11-23 16:47:30 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3fc9504b: startup date [Sat Nov 23 16:47:30 CST 2019]; root of context hierarchy
+2019-11-23 16:47:30 -HV000001: Hibernate Validator 5.3.6.Final
+2019-11-23 16:47:31 -Tomcat initialized with port(s): 8081 (http)
+2019-11-23 16:47:31 -Starting service [Tomcat]
+2019-11-23 16:47:31 -Starting Servlet Engine: Apache Tomcat/8.5.23
+2019-11-23 16:47:31 -Initializing Spring embedded WebApplicationContext
+2019-11-23 16:47:31 -Root WebApplicationContext: initialization completed in 837 ms
+2019-11-23 16:47:31 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-11-23 16:47:31 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-11-23 16:47:31 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-11-23 16:47:31 -Mapping filter: 'requestContextFilter' to: [/*]
+2019-11-23 16:47:31 -Mapping filter: 'authFilter' to urls: [/*]
+2019-11-23 16:47:31 -Mapping servlet: 'dispatcherServlet' to [/]
+2019-11-23 16:47:32 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3fc9504b: startup date [Sat Nov 23 16:47:30 CST 2019]; root of context hierarchy
+2019-11-23 16:47:32 -Mapped "{[/del/{id}],methods=[POST]}" onto public com.oom.utils.R com.oom.controller.FileServerController.remove(java.lang.String)
+2019-11-23 16:47:32 -Mapped "{[/list/{page}/{limit}],methods=[GET]}" onto public com.oom.utils.R com.oom.controller.FileServerController.list(java.lang.Integer,java.lang.Integer)
+2019-11-23 16:47:32 -Mapped "{[/uploadFile],methods=[POST]}" onto public com.oom.utils.R com.oom.controller.FileServerController.upload(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+2019-11-23 16:47:32 -Mapped "{[/download/{id}],methods=[GET]}" onto public com.oom.model.FileDO com.oom.controller.FileServerController.download(java.lang.String)
+2019-11-23 16:47:32 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-11-23 16:47:32 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-11-23 16:47:32 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-23 16:47:32 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-23 16:47:32 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-23 16:47:32 -Registering beans for JMX exposure on startup
+2019-11-23 16:47:32 -Initializing ProtocolHandler ["http-nio-8081"]
+2019-11-23 16:47:32 -Starting ProtocolHandler ["http-nio-8081"]
+2019-11-23 16:47:32 -Using a shared selector for servlet write/read
+2019-11-23 16:47:32 -Tomcat started on port(s): 8081 (http)
+2019-11-23 16:47:32 -Started FileServerApplication in 1.951 seconds (JVM running for 2.457)
+2019-11-23 16:47:48 -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-11-23 16:47:48 -FrameworkServlet 'dispatcherServlet': initialization started
+2019-11-23 16:47:48 -FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2019-11-23 16:47:48 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:47:48 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:47:52 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:47:52 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:47:52 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:47:52 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:47:58 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:47:58 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:47:58 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:47:58 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:48:03 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:48:03 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:48:46 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:48:46 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:48:49 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:48:49 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:48:49 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:48:49 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:48:58 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:48:58 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:48:58 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:48:58 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:49:00 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:49:00 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:49:21 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:49:21 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:49:22 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:49:22 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:49:54 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:49:54 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:49:54 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:49:54 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:50:22 -Starting FileServerApplication on LLORGAN-RHSPTI7 with PID 11636 (D:\idea_workspace\FileManagerServer\server\target\classes started by Administrator in D:\idea_workspace\FileManagerServer)
+2019-11-23 16:50:22 -No active profile set, falling back to default profiles: default
+2019-11-23 16:50:22 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1a482e36: startup date [Sat Nov 23 16:50:22 CST 2019]; root of context hierarchy
+2019-11-23 16:50:22 -HV000001: Hibernate Validator 5.3.6.Final
+2019-11-23 16:50:23 -Tomcat initialized with port(s): 8081 (http)
+2019-11-23 16:50:23 -Starting service [Tomcat]
+2019-11-23 16:50:23 -Starting Servlet Engine: Apache Tomcat/8.5.23
+2019-11-23 16:50:23 -Initializing Spring embedded WebApplicationContext
+2019-11-23 16:50:23 -Root WebApplicationContext: initialization completed in 702 ms
+2019-11-23 16:50:23 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-11-23 16:50:23 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-11-23 16:50:23 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-11-23 16:50:23 -Mapping filter: 'requestContextFilter' to: [/*]
+2019-11-23 16:50:23 -Mapping filter: 'authFilter' to urls: [/*]
+2019-11-23 16:50:23 -Mapping servlet: 'dispatcherServlet' to [/]
+2019-11-23 16:50:23 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1a482e36: startup date [Sat Nov 23 16:50:22 CST 2019]; root of context hierarchy
+2019-11-23 16:50:23 -Mapped "{[/del/{id}],methods=[POST]}" onto public com.oom.utils.R com.oom.controller.FileServerController.remove(java.lang.String)
+2019-11-23 16:50:23 -Mapped "{[/list/{page}/{limit}],methods=[GET]}" onto public com.oom.utils.R com.oom.controller.FileServerController.list(java.lang.Integer,java.lang.Integer)
+2019-11-23 16:50:23 -Mapped "{[/uploadFile],methods=[POST]}" onto public com.oom.utils.R com.oom.controller.FileServerController.upload(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+2019-11-23 16:50:23 -Mapped "{[/download/{id}],methods=[GET]}" onto public com.oom.model.FileDO com.oom.controller.FileServerController.download(java.lang.String)
+2019-11-23 16:50:23 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-11-23 16:50:23 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-11-23 16:50:23 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-23 16:50:23 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-23 16:50:23 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-23 16:50:23 -Registering beans for JMX exposure on startup
+2019-11-23 16:50:23 -Initializing ProtocolHandler ["http-nio-8081"]
+2019-11-23 16:50:23 -Starting ProtocolHandler ["http-nio-8081"]
+2019-11-23 16:50:23 -Using a shared selector for servlet write/read
+2019-11-23 16:50:23 -Tomcat started on port(s): 8081 (http)
+2019-11-23 16:50:23 -Started FileServerApplication in 1.544 seconds (JVM running for 1.991)
+2019-11-23 16:50:48 -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-11-23 16:50:48 -FrameworkServlet 'dispatcherServlet': initialization started
+2019-11-23 16:50:48 -FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2019-11-23 16:50:48 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:50:48 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:50:50 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:50:50 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:50:55 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:50:55 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:50:55 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:50:55 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:50:59 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:50:59 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<
+2019-11-23 16:51:02 ->>>>>>>>>>>>>验签开始
+2019-11-23 16:51:02 ->>>>>>>>>>>>>验签成功<<<<<<<<<<<<<<<<<<<

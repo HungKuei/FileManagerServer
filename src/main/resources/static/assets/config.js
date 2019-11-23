@@ -1,1 +1,0 @@
-var baseServer = "http://localhost:8081/";

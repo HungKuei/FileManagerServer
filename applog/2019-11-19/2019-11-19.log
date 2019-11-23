@@ -653,3 +653,71 @@ com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'i
 2019-11-19 16:36:43 -Initializing Spring FrameworkServlet 'dispatcherServlet'
 2019-11-19 16:36:43 -FrameworkServlet 'dispatcherServlet': initialization started
 2019-11-19 16:36:43 -FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2019-11-19 17:17:39 -Starting FileServerApplication on LLORGAN-RHSPTI7 with PID 21824 (D:\idea_workspace\FileManagerServer\target\classes started by Administrator in D:\idea_workspace\FileManagerServer)
+2019-11-19 17:17:39 -No active profile set, falling back to default profiles: default
+2019-11-19 17:17:39 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@34a3d150: startup date [Tue Nov 19 17:17:39 CST 2019]; root of context hierarchy
+2019-11-19 17:17:39 -HV000001: Hibernate Validator 5.3.6.Final
+2019-11-19 17:17:40 -Tomcat initialized with port(s): 8081 (http)
+2019-11-19 17:17:40 -Starting service [Tomcat]
+2019-11-19 17:17:40 -Starting Servlet Engine: Apache Tomcat/8.5.23
+2019-11-19 17:17:40 -Initializing Spring embedded WebApplicationContext
+2019-11-19 17:17:40 -Root WebApplicationContext: initialization completed in 652 ms
+2019-11-19 17:17:40 -Mapping servlet: 'dispatcherServlet' to [/]
+2019-11-19 17:17:40 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-11-19 17:17:40 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-11-19 17:17:40 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-11-19 17:17:40 -Mapping filter: 'requestContextFilter' to: [/*]
+2019-11-19 17:17:40 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@34a3d150: startup date [Tue Nov 19 17:17:39 CST 2019]; root of context hierarchy
+2019-11-19 17:17:40 -Mapped "{[/api/del],methods=[POST]}" onto public com.oom.utils.R com.oom.controller.FileController.remove(java.lang.String)
+2019-11-19 17:17:40 -Mapped "{[/api/list],methods=[GET]}" onto public com.oom.utils.R com.oom.controller.FileController.list(java.lang.Integer,java.lang.Integer)
+2019-11-19 17:17:40 -Mapped "{[/api/upload],methods=[POST]}" onto public com.oom.utils.R com.oom.controller.FileController.upload(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+2019-11-19 17:17:40 -Mapped "{[/api/download/{id}],methods=[GET]}" onto public void com.oom.controller.FileController.download(java.lang.String,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2019-11-19 17:17:40 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-11-19 17:17:40 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-11-19 17:17:40 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-19 17:17:40 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-19 17:17:40 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-19 17:17:40 -Adding welcome page: class path resource [static/index.html]
+2019-11-19 17:17:40 -Registering beans for JMX exposure on startup
+2019-11-19 17:17:40 -Initializing ProtocolHandler ["http-nio-8081"]
+2019-11-19 17:17:40 -Starting ProtocolHandler ["http-nio-8081"]
+2019-11-19 17:17:40 -Using a shared selector for servlet write/read
+2019-11-19 17:17:40 -Tomcat started on port(s): 8081 (http)
+2019-11-19 17:17:40 -Started FileServerApplication in 1.471 seconds (JVM running for 1.975)
+2019-11-19 17:17:52 -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-11-19 17:17:52 -FrameworkServlet 'dispatcherServlet': initialization started
+2019-11-19 17:17:52 -FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2019-11-19 17:26:45 -Starting FileServerApplication on LLORGAN-RHSPTI7 with PID 10040 (D:\idea_workspace\FileManagerServer\target\classes started by Administrator in D:\idea_workspace\FileManagerServer)
+2019-11-19 17:26:45 -No active profile set, falling back to default profiles: default
+2019-11-19 17:26:45 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@34a3d150: startup date [Tue Nov 19 17:26:45 CST 2019]; root of context hierarchy
+2019-11-19 17:26:45 -HV000001: Hibernate Validator 5.3.6.Final
+2019-11-19 17:26:46 -Tomcat initialized with port(s): 8081 (http)
+2019-11-19 17:26:46 -Starting service [Tomcat]
+2019-11-19 17:26:46 -Starting Servlet Engine: Apache Tomcat/8.5.23
+2019-11-19 17:26:46 -Initializing Spring embedded WebApplicationContext
+2019-11-19 17:26:46 -Root WebApplicationContext: initialization completed in 659 ms
+2019-11-19 17:26:46 -Mapping servlet: 'dispatcherServlet' to [/]
+2019-11-19 17:26:46 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-11-19 17:26:46 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-11-19 17:26:46 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-11-19 17:26:46 -Mapping filter: 'requestContextFilter' to: [/*]
+2019-11-19 17:26:46 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@34a3d150: startup date [Tue Nov 19 17:26:45 CST 2019]; root of context hierarchy
+2019-11-19 17:26:46 -Mapped "{[/api/del],methods=[POST]}" onto public com.oom.utils.R com.oom.controller.FileController.remove(java.lang.String)
+2019-11-19 17:26:46 -Mapped "{[/api/list],methods=[GET]}" onto public com.oom.utils.R com.oom.controller.FileController.list(java.lang.Integer,java.lang.Integer)
+2019-11-19 17:26:46 -Mapped "{[/api/upload],methods=[POST]}" onto public com.oom.utils.R com.oom.controller.FileController.upload(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+2019-11-19 17:26:46 -Mapped "{[/api/download/{id}],methods=[GET]}" onto public void com.oom.controller.FileController.download(java.lang.String,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2019-11-19 17:26:46 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-11-19 17:26:46 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-11-19 17:26:46 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-19 17:26:46 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-19 17:26:46 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-19 17:26:46 -Adding welcome page: class path resource [static/index.html]
+2019-11-19 17:26:46 -Registering beans for JMX exposure on startup
+2019-11-19 17:26:46 -Initializing ProtocolHandler ["http-nio-8081"]
+2019-11-19 17:26:46 -Starting ProtocolHandler ["http-nio-8081"]
+2019-11-19 17:26:46 -Using a shared selector for servlet write/read
+2019-11-19 17:26:46 -Tomcat started on port(s): 8081 (http)
+2019-11-19 17:26:46 -Started FileServerApplication in 1.445 seconds (JVM running for 1.941)
+2019-11-19 17:26:50 -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-11-19 17:26:50 -FrameworkServlet 'dispatcherServlet': initialization started
+2019-11-19 17:26:51 -FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
